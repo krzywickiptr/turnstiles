@@ -1,4 +1,4 @@
-Motywacja
+##Motywacja
 pthread_mutex_t i std::mutex zajmują po 40 bajtów. Można sobie wyobrazić sytuację, gdy obiektów które chcielibyśmy chronić muteksami jest bardzo, bardzo dużo - wtedy każdy bajt się liczy.
 
 
@@ -6,7 +6,7 @@ Przykładem, jak można oszczędzić pamięć jest "turnstile". To koncepcja uż
 
 W internecie można znaleźć więcej informacji o tym, jak to działa w wymienionych systemach operacyjnych, lub można się domyślić.
 
-Zadanie
+##Zadanie
 Zadanie polega na zaimplementowaniu klasy "Mutex", która będzie zajmować nie więcej niż 8 bajtów, o sygnaturze takiej jak w pliku "turnstile.h". Ilość użytej pamięci (poza samymi obiektami "Mutex") nie powinna być zależna od liczby obiektów typu Mutex, może być natomiast zależna od liczby wątków w programie.
 
 
